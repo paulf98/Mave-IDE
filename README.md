@@ -1,73 +1,18 @@
-# mave-branding
-The example of how to build the Theia-based applications with the mave-branding.
+# Mave IDE
+This repository shows how a Theia based IDE is customized. It is used as a part of the driving simulation framework Mave which is developed at University of Applied Sciences Kaiserslautern in Zweibrücken at the [HCI2B Group](https://hci.hs-kl.de/).
 
-## Getting started
+## Prerequisites 
 
-Install [nvm](https://github.com/creationix/nvm#install-script).
+- Node.js >= 12.14.1 AND < 13.
+    - Preferably, use Node version 12.14.1, as it is the the recommended minimum version according to the framework's supported electron version.
+- [Yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable) package manager v1.7.0 
 
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+## Running the IDE in Browser
 
-Install npm and node.
-
-    nvm install 10
-    nvm use 10
-
-Install yarn.
-
-    npm install -g yarn
-
-## Running the browser example
-
-    yarn rebuild:browser
+    yarn
     cd browser-app
     yarn start
 
 Open http://localhost:3000 in the browser.
 
-## Running the Electron example
 
-    yarn rebuild:electron
-    cd electron-app
-    yarn start
-
-## Developing with the browser example
-
-Start watching of mave-branding.
-
-    cd mave-branding
-    yarn watch
-
-Start watching of the browser example.
-
-    yarn rebuild:browser
-    cd browser-app
-    yarn watch
-
-Launch `Start Browser Backend` configuration from VS code.
-
-Open http://localhost:3000 in the browser.
-
-## Developing with the Electron example
-
-Start watching of mave-branding.
-
-    cd mave-branding
-    yarn watch
-
-Start watching of the electron example.
-
-    yarn rebuild:electron
-    cd electron-app
-    yarn watch
-
-Launch `Start Electron Backend` configuration from VS code.
-
-## Publishing mave-branding
-
-Create a npm user and login to the npm registry, [more on npm publishing](https://docs.npmjs.com/getting-started/publishing-npm-packages).
-
-    npm login
-
-Publish packages with lerna to update versions properly across local packages, [more on publishing with lerna](https://github.com/lerna/lerna#publish).
-
-    npx lerna publish
