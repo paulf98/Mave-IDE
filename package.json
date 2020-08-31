@@ -8,6 +8,6 @@
     "lerna": "2.4.0"
   },
   "workspaces": [
-    "mave-branding", "browser-app"
+    "mave-branding", "browser-app", "mave-doc"
   ]
 }

@@ -18,7 +18,8 @@
 		"@theia/process": "latest",
 		"@theia/terminal": "latest",
 		"@theia/workspace": "latest",
-		"mave-branding": "0.0.0"
+		"mave-branding": "0.0.0",
+		"mave-doc": "0.0.0"
 	},
 	"devDependencies": {
 		"@theia/cli": "latest"
