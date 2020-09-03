@@ -9,7 +9,8 @@
     "src"
   ],
   "dependencies": {
-    "@theia/core": "latest"
+    "@theia/core": "latest",
+    "@theia/mini-browser": "latest"
   },
   "devDependencies": {
     "rimraf": "latest",
@@ -21,9 +22,7 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
-  "theiaExtensions": [
-    {
-      "frontend": "lib/browser/mave-doc-frontend-module"
-    }
-  ]
+  "theiaExtensions": [{
+    "frontend": "lib/browser/mave-doc-frontend-module"
+  }]
 }

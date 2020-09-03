@@ -125,7 +125,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 // include only es6 dependencies to transpile them to es5 classes
-                include: /monaco-languageclient|vscode-ws-jsonrpc|vscode-jsonrpc|vscode-languageserver-protocol|vscode-languageserver-types|vscode-languageclient/,
+                include: /vscode-ws-jsonrpc|vscode-jsonrpc|vscode-languageserver-protocol|vscode-languageserver-types/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -147,8 +147,7 @@ module.exports = {
     resolve: {
         extensions: ['.js'],
         alias: {
-            'vs': path.resolve(outputPath, monacoEditorCorePath),
-            'vscode': require.resolve('monaco-languageclient/lib/vscode-compatibility')
+            'vs': path.resolve(outputPath, monacoEditorCorePath)
         }
     },
     devtool: 'source-map',

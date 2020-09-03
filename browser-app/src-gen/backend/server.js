@@ -40,12 +40,12 @@ function start(port, host, argv) {
 }
 
 module.exports = (port, host, argv) => Promise.resolve()
-    .then(function () { return Promise.resolve(require('@theia/process/lib/common/process-common-module')).then(load) })
-    .then(function () { return Promise.resolve(require('@theia/process/lib/node/process-backend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/filesystem/lib/node/filesystem-backend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/filesystem/lib/node/download/file-download-backend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/workspace/lib/node/workspace-backend-module')).then(load) })
-    .then(function () { return Promise.resolve(require('@theia/languages/lib/node/languages-backend-module')).then(load) })
+    .then(function () { return Promise.resolve(require('@theia/mini-browser/lib/node/mini-browser-backend-module')).then(load) })
+    .then(function () { return Promise.resolve(require('@theia/process/lib/common/process-common-module')).then(load) })
+    .then(function () { return Promise.resolve(require('@theia/process/lib/node/process-backend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/terminal/lib/node/terminal-backend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/task/lib/node/task-backend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/debug/lib/node/debug-backend-module')).then(load) })
