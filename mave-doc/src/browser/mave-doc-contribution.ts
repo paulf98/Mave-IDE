@@ -4,8 +4,7 @@ import {
 	CommandRegistry,
 	MenuContribution,
 	MenuModelRegistry,
-	MessageService,
-	MiniBrowser
+	MessageService
 } from '@theia/core/lib/common';
 import { CommonMenus } from '@theia/core/lib/browser';
 
@@ -21,6 +20,7 @@ export class MaveDocCommandContribution implements CommandContribution {
 	registerCommands(registry: CommandRegistry): void {
 		registry.registerCommand(MaveDocCommand, {
 			execute: () => {
+				console.log('Start mini-browser');
 				this.messageService.info('Hello World!');
 			}
 		});

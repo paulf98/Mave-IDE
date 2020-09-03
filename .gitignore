@@ -2,3 +2,5 @@ node_modules
 .browser_modules
 lib
 *.log
+browser-app/src-gen
+browser-app/gen-webpack.config.js
