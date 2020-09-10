@@ -9,7 +9,9 @@ export const MaveDocCommand = {
 	label: 'Documentation'
 };
 
-const link = new URI('https://www.hs-kl.de/');
+// const link = new URI('https://www.hs-kl.de/');
+const link = new URI('file:///C:/Program%20Files/HCI2B/Mave/Documentation/index.html');
+
 @injectable()
 export class MaveDocCommandContribution implements CommandContribution {
 	constructor(@inject(MiniBrowserOpenHandler) private readonly miniBrowserOpenHandler: MiniBrowserOpenHandler) {}

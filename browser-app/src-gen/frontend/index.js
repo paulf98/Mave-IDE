@@ -66,6 +66,7 @@ module.exports = Promise.resolve()
     .then(function () { return Promise.resolve(require('@theia/plugin-ext/lib/plugin-ext-frontend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/plugin-dev/lib/browser/plugin-dev-frontend-module')).then(load) })
     .then(function () { return Promise.resolve(require('@theia/plugin-ext-vscode/lib/browser/plugin-vscode-frontend-module')).then(load) })
+    .then(function () { return Promise.resolve(require('@theia/vsx-registry/lib/browser/vsx-registry-frontend-module')).then(load) })
     .then(function () { return Promise.resolve(require('mave-branding/lib/browser/mave-branding-frontend-module')).then(load) })
     .then(function () { return Promise.resolve(require('mave-doc/lib/browser/mave-doc-frontend-module')).then(load) })
     .then(start).catch(reason => {
